@@ -4,8 +4,8 @@ class TerrenoTriangular(Terreno):
 
     def __init__(self, idImovel, nomeProprietario, tipoSolo, precoTerreno, base, altura):
         super().__init__(idImovel, nomeProprietario, tipoSolo, precoTerreno)
-        self.__base = base
-        self.__altura = altura
+        self.__base = float(base)
+        self.__altura = float(altura)
 
     # Metodo implementado da superclasse Terreno
     def area(self):

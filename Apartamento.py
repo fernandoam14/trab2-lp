@@ -4,10 +4,10 @@ class Apartamento(Residencia):
 
     def __init__(self, idImovel, nomeProprietario, numeroQuartos, numeroVagasGaragem, precoAreaConstruida, idAndar, areaConstruida, possuiAreaLazer, numeroAndares):
         super().__init__(idImovel, nomeProprietario, numeroQuartos, numeroVagasGaragem, precoAreaConstruida)
-        self.__idAndar = idAndar
-        self.__areaConstruida = areaConstruida
+        self.__idAndar = int(idAndar)
+        self.__areaConstruida = float(areaConstruida)
         self.__possuiAreaLazer = possuiAreaLazer
-        self.__numeroAndares = numeroAndares
+        self.__numeroAndares = int(numeroAndares)
 
     # Metodo implementado da superclasse Imovel
     def preco(self):

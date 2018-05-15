@@ -4,10 +4,10 @@ class Casa(Residencia):
 
     def __init__(self, idImovel, nomeProprietario, numeroQuartos, numeroVagasGaragem, precoAreaConstruida, numeroPavimentos, areaPavimento, areaLivre, precoAreaLivre):
         super().__init__(idImovel, nomeProprietario, numeroQuartos, numeroVagasGaragem, precoAreaConstruida)
-        self.__numeroPavimentos = numeroPavimentos
-        self.__areaPavimento = areaPavimento
-        self.__areaLivre = areaLivre
-        self.__precoAreaLivre = precoAreaLivre
+        self.__numeroPavimentos = int(numeroPavimentos)
+        self.__areaPavimento = float(areaPavimento)
+        self.__areaLivre = float(areaLivre)
+        self.__precoAreaLivre = int(precoAreaLivre)
 
     # Metodo implementado da superclasse Imovel
     def preco(self):

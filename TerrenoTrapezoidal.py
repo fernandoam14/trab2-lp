@@ -4,9 +4,9 @@ class TerrenoTrapezoidal(Terreno):
 
     def __init__(self, idImovel, nomeProprietario, tipoSolo, precoTerreno, base1, base2, altura):
         super().__init__(idImovel, nomeProprietario, tipoSolo, precoTerreno)
-        self.__base1 = base1
-        self.__base2 = base2
-        self.__altura = altura
+        self.__base1 = float(base1)
+        self.__base2 = float(base2)
+        self.__altura = float(altura)
 
     # Metodo implementado da superclasse Terreno
     def area(self):

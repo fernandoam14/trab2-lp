@@ -5,7 +5,7 @@ class Terreno(Imovel):
     def __init__(self, idImovel, nomeProprietario, tipoSolo, precoTerreno):
         super().__init__(idImovel, nomeProprietario)
         self.__tipoSolo = tipoSolo
-        self.__precoTerreno = precoTerreno
+        self.__precoTerreno = int(precoTerreno)
 
     # Metodo implementado da superclasse Imovel
     def preco(self):

@@ -4,8 +4,8 @@ class TerrenoRetangular(Terreno):
 
     def __init__(self, idImovel, nomeProprietario, tipoSolo, precoTerreno, lado1, lado2):
         super().__init__(idImovel, nomeProprietario, tipoSolo, precoTerreno)
-        self.__lado1 = lado1
-        self.__lado2 = lado2
+        self.__lado1 = float(lado1)
+        self.__lado2 = float(lado2)
 
     # Metodo implementado da superclasse Terreno
     def area(self):
